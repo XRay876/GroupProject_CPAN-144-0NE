@@ -42,13 +42,13 @@ styles/
 
 ## Screenshots Phase 2
 
-###Main page (Dashboard):
+### Main page (Dashboard):
 ![Main page](screenshots/Screenshot_from_2025-04-14_15-48-58.png)
 
-###Activities page:
+### Activities page:
 ![Main page](screenshots/Screenshot_from_2025-04-14_15-51-19.png)
 
-###Tips page:
+### Tips page:
 ![Main page](screenshots/Screenshot_from_2025-04-14_15-51-53.png)
 
 
