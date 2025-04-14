@@ -21,7 +21,6 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Neon Buttons */
 .neon-btn, .neon-btn-sm {
   position: relative;
   display: inline-block;
@@ -42,7 +41,6 @@ body {
 }
 .neon-btn-sm { padding: 0.3rem 0.6rem; font-size: 0.8rem; }
 
-/* Links underline glow */
 a {
   position: relative;
   color: var(--text);

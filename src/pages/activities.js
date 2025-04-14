@@ -3,12 +3,6 @@ import ActivityForm from "../components/ActivityForm";
 import ActivityList from "../components/ActivityList";
 
 export default function Activities() {
-//   const [activities, setActivities] = useState([]);
-
-//   useEffect(() => {
-//     const stored = JSON.parse(localStorage.getItem("eco_acts") || "[]");
-//     setActivities(stored);
-//   }, []);
 
   const [activities, setActivities] = useState(() =>
     JSON.parse(localStorage.getItem("eco_acts") || "[]")

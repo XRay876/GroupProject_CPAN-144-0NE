@@ -40,7 +40,7 @@ export default function Dashboard() {
 
       {carbonIntensity && (
         <p style={{ marginTop: "1rem" }}>
-          UK grid carbon intensity right now:&nbsp;
+          Grid carbon intensity right now:&nbsp;
           <strong>{carbonIntensity} gCO₂ / kWh</strong>
         </p>
       )}
