@@ -35,3 +35,18 @@ styles/
   Footer.module.css
   Card.module.css
 ```
+---
+
+## Screenshots - Phase 1:
+
+### Dashboard:
+![Main page](screenshots/Screenshot_from_2025-04-14_19-16-54.png)
+
+### Activities page:
+![Activities](screenshots/Screenshot_from_2025-04-14_19-18-20.png)
+
+### Exact Activity:
+![Exact Activity](screenshots/Screenshot_from_2025-04-14_19-22-42.png)
+
+### Tips page:
+![Tips](screenshots/Screenshot_from_2025-04-14_19-18-59.png)
