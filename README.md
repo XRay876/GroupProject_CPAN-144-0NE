@@ -1,12 +1,11 @@
-# EcoTrack – Personal Sustainability Dashboard
+# EcoTrack – Personal Sustainability Dashboard 🌱✨
 
-EcoTrack helps users track day‑to‑day activities that influence their carbon footprint and discover actionable tips to live more sustainably.
-
-## Phase 1 Scope
-* **Routing:** `/` (Dashboard), `/activities` (Activity Log), `/tips` (Sustainability Tips)
-* **Core components:** `Navbar`, `Footer`, `Layout`, `ActivityForm`, `ActivityList`, `ActivityCard`, `TipCard`
-* **State:** Activities are held in the `Activities` page and lifted to `Layout` so the Dashboard can summarise totals.
-* **Styling:** Pure CSS Modules (`*.module.css`) + `global.css`, responsive with flexbox + media queries.
+## What’s new in Phase 2
+| Category | Enhancements |
+|----------|--------------|
+| **Styling** | Full‑screen animated gradient background, glassmorphic cards with neon glow, responsive flex/grid layout |
+| **Animations** | Fade‑in & slide‑up page transitions, neon‑pulse hover on cards & buttons, smooth progress bar fill |
+| **Features** | • Daily CO₂ goal & animated progress bar<br>• Delete activities<br>• Random “Tip of the Day”<br>• Dynamic route `/activities/[id]` |
 
 ## Getting Started
 
@@ -22,16 +21,21 @@ components/
   ActivityForm.js
   ActivityList.js
   ActivityCard.js
+  GoalBar.js          // NEW
   TipCard.js
 pages/
   _app.js
-  index.js
+  index.js            // Dashboard
   activities.js
-  activities/[id].js   // Phase 2 dynamic route
+  activities/[id].js  // Dynamic details
   tips.js
 styles/
   global.css
   Navbar.module.css
   Footer.module.css
   Card.module.css
+  Progress.module.css // NEW
 ```
+
+
+---

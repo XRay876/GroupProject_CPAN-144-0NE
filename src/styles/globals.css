@@ -1,23 +1,61 @@
 :root {
-  --primary: #006e3b;
-  --accent: #e0ffef;
-  --text: #222;
+  --bg-start: #0f0c29;
+  --bg-mid: #302b63;
+  --bg-end: #24243e;
+  --neon1: #39ff14;
+  --neon2: #00ffff;
+  --text: #f1f1f1;
+  --card-bg: rgba(255, 255, 255, 0.06);
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+* { box-sizing: border-box; margin: 0; }
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   color: var(--text);
-  background: #f7faf7;
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-mid), var(--bg-end));
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Neon Buttons */
+.neon-btn, .neon-btn-sm {
+  position: relative;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  color: var(--neon1);
+  border: 2px solid var(--neon1);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: 0 0 6px var(--neon1);
+  transition: background 0.2s ease;
+}
+.neon-btn:hover, .neon-btn-sm:hover {
+  background: var(--neon1);
+  color: #000;
+  box-shadow: 0 0 8px var(--neon1), 0 0 16px var(--neon1);
+}
+.neon-btn-sm { padding: 0.3rem 0.6rem; font-size: 0.8rem; }
+
+/* Links underline glow */
 a {
+  position: relative;
+  color: var(--text);
   text-decoration: none;
-  color: inherit;
   padding: 0.25rem 0.5rem;
-  border-radius: 6px;
 }
-a:hover {
-  background: var(--accent);
+a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 2px;
+  background: var(--neon2);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 6px var(--neon2);
 }
+a:hover::after { width: 100%; }

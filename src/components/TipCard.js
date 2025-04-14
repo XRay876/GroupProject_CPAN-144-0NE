@@ -4,9 +4,9 @@ import styles from "../styles/Card.module.css";
 export default function TipCard({ tip }) {
   const [liked, setLiked] = useState(false);
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} neon-card`}>
       <p>{tip}</p>
-      <button onClick={() => setLiked((l) => !l)}>
+      <button className="neon-btn-sm" onClick={() => setLiked((l) => !l)}>
         {liked ? "❤️ Liked" : "🤍 Like"}
       </button>
     </div>

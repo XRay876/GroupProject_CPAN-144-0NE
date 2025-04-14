@@ -5,9 +5,9 @@ export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main style={{ minHeight: "calc(100vh - 160px)", padding: "1rem" }}>
+      <main style={{ minHeight: "calc(100vh - 200px)", padding: "2rem 1rem" }}>
         {children}
-      </main>
+        </main>
       <Footer />
     </>
   );

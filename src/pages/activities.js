@@ -14,13 +14,15 @@ export default function Activities() {
     localStorage.setItem("eco_acts", JSON.stringify(activities));
   }, [activities]);
 
+  const handleDelete = (id) => setActivities((acts) => acts.filter((a) => a.id !== id));
+
   return (
     <>
       <h2>Add New Activity</h2>
       <ActivityForm onAdd={(a) => setActivities([a, ...activities])} />
-      <hr style={{ margin: "1rem 0" }} />
+      <hr style={{ margin: "2rem 0" }} />
       <h2>Your Activities</h2>
-      <ActivityList activities={activities} />
+      <ActivityList activities={activities} onDelete={handleDelete} />
     </>
   );
 }

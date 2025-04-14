@@ -13,7 +13,7 @@ export default function ActivityForm({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "0.5rem" }}>
+    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
       <input
         type="text"
         placeholder="Activity (e.g. Bike Ride)"
@@ -27,7 +27,7 @@ export default function ActivityForm({ onAdd }) {
         value={co2}
         onChange={(e) => setCo2(e.target.value)}
       />
-      <button type="submit">Add</button>
+      <button className="neon-btn" type="submit">Add</button>
     </form>
   );
 }

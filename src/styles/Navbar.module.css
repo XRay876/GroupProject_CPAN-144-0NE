@@ -3,10 +3,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background: var(--primary);
-    color: white;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
   }
-  .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
+  .logo { font-weight: 700; font-size: 1.7rem; color: var(--neon2); text-shadow: 0 0 6px var(--neon2); }
+  .links { display: flex; gap: 1rem; }
