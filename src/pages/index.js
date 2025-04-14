@@ -5,11 +5,17 @@ export default function Dashboard() {
   const [activities, setActivities] = useState([]);
   const [goal, setGoal] = useState(10);
 
+  const [carbonIntensity, setCarbonIntensity] = useState(null);
+
   useEffect(() => {
     const storedActs = JSON.parse(localStorage.getItem("eco_acts") || "[]");
     setActivities(storedActs);
     const storedGoal = JSON.parse(localStorage.getItem("eco_goal") || "10");
     setGoal(storedGoal);
+    fetch("/api/carbon")
+     .then((r) => r.json())
+     .then((d) => setCarbonIntensity(d.intensity))
+     .catch(console.error);
   }, []);
 
   const totalCo2 = activities.reduce((sum, a) => sum + a.co2, 0);
@@ -31,6 +37,13 @@ export default function Dashboard() {
           style={{ width: 80 }}
         />
       </div>
+
+      {carbonIntensity && (
+        <p style={{ marginTop: "1rem" }}>
+          UK grid carbon intensity right now:&nbsp;
+          <strong>{carbonIntensity} gCO₂ / kWh</strong>
+        </p>
+      )}
     </section>
   );
 }
