@@ -1,37 +1,28 @@
-# EcoTrack – Personal Sustainability Dashboard
+# EcoTrack · Phase 3
 
-EcoTrack helps users track day‑to‑day activities that influence their carbon footprint and discover actionable tips to live more sustainably.
+## ✨ New Features
+| Area | What changed |
+|------|--------------|
+| **Dashboard** | Carbon‑intensity moved into its own neon card; responsive grid layout |
+| **News** | `/news` route + `NewsCard` components. Serverless route `/api/news` fetches live environment headlines via NewsData.io |
+| **Quiz** | `/quiz` route implements a 5‑question eco‑lifestyle quiz with animated score reveal |
+| **Mobile UX** | Hamburger menu toggles full‑screen overlay nav on ≤720 px |
+| **Styling** | Minor CSS tweaks, card image styles, smoother fade‑in animations |
 
-## Phase 1 Scope
-* **Routing:** `/` (Dashboard), `/activities` (Activity Log), `/tips` (Sustainability Tips)
-* **Core components:** `Navbar`, `Footer`, `Layout`, `ActivityForm`, `ActivityList`, `ActivityCard`, `TipCard`
-* **State:** Activities are held in the `Activities` page and lifted to `Layout` so the Dashboard can summarise totals.
-* **Styling:** Pure CSS Modules (`*.module.css`) + `global.css`, responsive with flexbox + media queries.
 
-## Getting Started
+## Screenshots Phase 3
+
+### News page:
+![Main page](screenshots/Screenshot_from_2025-04-14_18-57-15.png)
+
+### Changed API Carbon Widget:
+![Main page](screenshots/Screenshot_from_2025-04-14_18-57-53.png)
+
+### Quiz page:
+![Main page](screenshots/Screenshot_from_2025-04-14_18-59-03.png)
+
+### Navigation menu for phone:
+![Main page](screenshots/Screenshot_from_2025-04-14_19-00-45.png)
 
 
----
 
-## File / Folder Structure (inside **src/**)
-```
-components/
-  Layout.js
-  Navbar.js
-  Footer.js
-  ActivityForm.js
-  ActivityList.js
-  ActivityCard.js
-  TipCard.js
-pages/
-  _app.js
-  index.js
-  activities.js
-  activities/[id].js   // Phase 2 dynamic route
-  tips.js
-styles/
-  global.css
-  Navbar.module.css
-  Footer.module.css
-  Card.module.css
-```

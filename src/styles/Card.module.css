@@ -1,0 +1,15 @@
+.card {
+    position: relative;
+    padding: 1.2rem;
+    border-radius: 12px;
+    background: var(--card-bg);
+    backdrop-filter: blur(14px);
+    color: var(--text);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .neon-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 12px var(--neon2), 0 0 24px var(--neon2);
+  }
+  .cardLink { color: inherit; text-decoration: none; }
