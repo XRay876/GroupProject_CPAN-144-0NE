@@ -1,4 +1,4 @@
-# EcoTrack – Personal Sustainability Dashboard 🌱✨
+# EcoTrack – Phase 2
 
 ## What’s new in Phase 2
 | Category | Enhancements |
