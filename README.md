@@ -1,55 +1,28 @@
-# EcoTrack – Personal Sustainability Dashboard 🌱✨
+# EcoTrack · Phase 3
 
-## What’s new in Phase 2
-| Category | Enhancements |
-|----------|--------------|
-| **Styling** | Full‑screen animated gradient background, glassmorphic cards with neon glow, responsive flex/grid layout |
-| **Animations** | Fade‑in & slide‑up page transitions, neon‑pulse hover on cards & buttons, smooth progress bar fill |
-| **Features** | • Daily CO₂ goal & animated progress bar<br>• Delete activities<br>• Random “Tip of the Day”<br>• Dynamic route `/activities/[id]`<br>•Added API to get Grid carbon intensity right now |
-
-## Getting Started
-
-
----
-
-## File / Folder Structure (inside **src/**)
-```
-components/
-  Layout.js
-  Navbar.js
-  Footer.js
-  ActivityForm.js
-  ActivityList.js
-  ActivityCard.js
-  GoalBar.js          // NEW
-  TipCard.js
-pages/
-  _app.js
-  index.js            // Dashboard
-  activities.js
-  activities/[id].js  // Dynamic details
-  tips.js
-styles/
-  global.css
-  Navbar.module.css
-  Footer.module.css
-  Card.module.css
-  Progress.module.css // NEW
-```
+## ✨ New Features
+| Area | What changed |
+|------|--------------|
+| **Dashboard** | Carbon‑intensity moved into its own neon card; responsive grid layout |
+| **News** | `/news` route + `NewsCard` components. Serverless route `/api/news` fetches live environment headlines via NewsData.io |
+| **Quiz** | `/quiz` route implements a 5‑question eco‑lifestyle quiz with animated score reveal |
+| **Mobile UX** | Hamburger menu toggles full‑screen overlay nav on ≤720 px |
+| **Styling** | Minor CSS tweaks, card image styles, smoother fade‑in animations |
 
 
----
+## Screenshots Phase 3
 
-## Screenshots Phase 2
+### News page:
+![Main page](screenshots/Screenshot_from_2025-04-14_18-57-15.png)
 
-### Main page (Dashboard):
-![Main page](screenshots/Screenshot_from_2025-04-14_15-48-58.png)
+### Changed API Carbon Widget:
+![Main page](screenshots/Screenshot_from_2025-04-14_18-57-53.png)
 
-### Activities page:
-![Main page](screenshots/Screenshot_from_2025-04-14_15-51-19.png)
+### Quiz page:
+![Main page](screenshots/Screenshot_from_2025-04-14_18-59-03.png)
 
-### Tips page:
-![Main page](screenshots/Screenshot_from_2025-04-14_15-51-53.png)
+### Navigation menu for phone:
+![Main page](screenshots/Screenshot_from_2025-04-14_19-00-45.png)
 
 
 
