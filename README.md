@@ -5,7 +5,7 @@
 |----------|--------------|
 | **Styling** | Full‑screen animated gradient background, glassmorphic cards with neon glow, responsive flex/grid layout |
 | **Animations** | Fade‑in & slide‑up page transitions, neon‑pulse hover on cards & buttons, smooth progress bar fill |
-| **Features** | • Daily CO₂ goal & animated progress bar<br>• Delete activities<br>• Random “Tip of the Day”<br>• Dynamic route `/activities/[id]` |
+| **Features** | • Daily CO₂ goal & animated progress bar<br>• Delete activities<br>• Random “Tip of the Day”<br>• Dynamic route `/activities/[id]`<br>•Added API to get Grid carbon intensity right now |
 
 ## Getting Started
 
@@ -39,3 +39,17 @@ styles/
 
 
 ---
+
+## Screenshots Phase 2
+
+###Main page (Dashboard):
+![Main page](screenshots/Screenshot_from_2025-04-14_15-48-58.png)
+
+###Activities page:
+![Main page](screenshots/Screenshot_from_2025-04-14_15-51-19.png)
+
+###Tips page:
+![Main page](screenshots/Screenshot_from_2025-04-14_15-51-53.png)
+
+
+
