@@ -61,7 +61,7 @@ cp .env.local.example .env.local
 npm run dev                   # open http://localhost:3000
 
 # 6. Production build
-npm build && pnpm start
+npm build && npm start
 ```
 
 ---
