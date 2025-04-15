@@ -177,3 +177,6 @@ group-project-cpan-144
 
 ### Quiz page:
 ![News page](screenshots/Screenshot_from_2025-04-14_18-59-03.png)
+
+### Phone adaptation
+![Phone adaptation](screenshots/Screenshot_from_2025-04-14_19-00-45.png)
